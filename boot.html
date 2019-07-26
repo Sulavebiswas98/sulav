@@ -1,0 +1,307 @@
+<html lang="en">
+<head><center><h1 style="color:yellow;font-size:60px"><i>Magura District</i></h1>
+<p style="color:red;font-size:20px"><i>
+ Which is located in Khulna Division</i></p></center>
+  <title> Project Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  table, th, td {
+  border: 2px solid red;
+  background-color:white;
+  text-align: center;
+}
+  h1 {
+  text-shadow: 4px 4px 7px red;
+}
+ * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+} 
+.flag{
+float:right;
+}
+
+  </style>
+  
+</head>
+<body style="background-color:black">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.maguranews.com">Newsmagura</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="sps.html">Tourist place</a></li>
+      <li><a href="skb.html">Famous Person</a></li>
+      <li><a href="sk.html">River of Magura</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <div class="container"> 
+   <div class="row">
+   <div class="col-sm-4">
+  <h3>Main point of magura</h3>
+  <img src="oo.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+  <p>The road of jessore,dhaka,jhanidaho are join here.</p>
+   </div>
+
+	
+	<div class="col-sm-4">
+  <h3>Arpara bridg</h3>
+  <img src="b.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+	<p>This bridg is way of magura to jessore</p>
+	</div>
+	<div class="col-sm-4">
+  <h3>Magura stadium</h3>
+  <img src="s.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+	<p>This is south side of main point</p>
+	</div>
+	</div>
+<br><br>
+<br><br>
+<br>
+<br><br>
+<center><h1 style="color:red;font-size:70px"><i>About Magura District</i></h1></center>
+<br><br>
+<br><br>
+<br><br>
+<center><div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="m1.jpg" height="600" width="800">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="m2.jpg" height="600" width="800">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="m3.jpg" height="600" width="800">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script></center>
+<br>
+<br>
+<h1 style="color:red;font-size:40px">History of Magura</h1> 
+<br>
+<br> 
+<p  style="color:gray;font-size:20px"> <img src="map.jpg" width="500" height="600" class="flag">Magura District (khulna division) area 1048.61 sq km, located in between 23°15' and 23°41' north latitudes and in between 89°15' and 89°42' east longitudes. It is bounded by rajbari district on the north, jessore and narail districts on the south, faridpur district on the east, jhenaidah district on the west.
+
+Population Total 824311; male 420907, female 403404; Muslim 664937, Hindu 158685, Buddhist 342, Christian 21 and others 326.
+
+Water bodies Main rivers: gorai-madhumati, Nabaganga, kumar.
+
+Administration Magura sub-division was established in 1945 and it was turned into a district on 1 March 1984.
+<br><br>
+History of the War of Liberation Magura was under Sector 8 during the war of liberation. About 16 encounters were held between the freedom fighters and the Pak army in Magura district. The Pak army buried alive 6 freedom fighters at a place near Shatakhali Road on the Magura-Jessore highway. Besides, 7 freedom fighters were killed by the razakars at Talkhari.
+
+Marks of the War of Liberation Mass grave 4 (Magura PTI compound, WAPDA Canal, Binodpur Bazar Ghat, Galakata Bridge at Chhaigharia;); memorial monument 1 (PTI main gate adjacent to the Magura Bishwa Road).
+
+Literacy rate and educational institutions Average literacy 44.7%; male 49.2%, female 40.1%. Educational institutions: college 17, secondary school 115, primary school 370, satellite school 21, kindergarten 3, brac school 124, community school 134, madrasa 76. Noted educational institutions: Government Hossain Shahid Suhrawardi College (1940), Magura Government Boys' High School (1854), Nohata Rani Patit Pabani High School (1924), Gangarampur PK Secondary School (1900), Nakol Raicharan Secondary School (1901), Sreepur MC Pilot Secondary School (1902), Binodpur Basant Kumar Multilateral Secondary School (1904), Hazipur Secondary School (1914), Shatrujitpur Kaliprasanna Secondary School (1919), Dhuljora Chura Gati Pratapchandra Secondary School (1927), Shimakhali Primary School (1932), Bororia AW Senior Madrasa (1907), Nohata AG Fazil Madrasa (1921).
+
+Main sources of income Agriculture 66.3%, non-agricultural labourer 2.65%, industry 1.29%, commerce 12.34%, transport and communication 3.59%, service 7.85%, construction 1.34%, religious service 0.14%, rent and remittance 0.43% and others 4.07%.
+
+Newspapers and periodicals Daily: Khedmat; weekly: Angikar, Grameen Bangla.
+
+Folk culture Jarigan, Sarigan, Bhatiali, Kavigan, Haloigan, Jatra, Pala are notable. [Abu Naser Majnu]
+
+See also The upazilas under this district.
+
+References Bangladesh Population Census 2001, Bangladesh Bureau of Statistics; Cultural survey report of Magura District 2007; Cultural survey report of upazilas of Magura District 2007.
+</p>
+<br>
+<br>
+<center><h1 style="color:red;font-size:30px">Others Information of Magura District</h1></center>
+<br>
+<br>
+<center><table style=width="900" height="300">
+  <tr style="color:black">
+    <th>Name of Upazila</th>
+    <th>Area
+	(sq km)</th> 
+    <th>Union</th>
+	 <th>Mouza</th>
+    <th>Village</th> 
+    <th>Population</th>
+	<th>Density
+	(per sq km</th> 
+    <th>Literacy rate
+(%)</th>
+  </tr>
+  <tr style="color:black">
+    <td>Magura Sadar</td>
+    <td>406.50</td>
+    <td>13</td>
+	<td>222</td>
+    <td>236</td>
+    <td>331494</td>
+	<td>815</td>
+    <td>45.8</td>
+  </tr>
+  <tr style="color:black">
+    <td>Mohammadpur</td>
+    <td>234.29</td>
+    <td>8</td>
+	<td>132</td>
+    <td>183</td>
+    <td>188753</td>
+	<td>806</td>
+    <td>44.5</td>
+  </tr>
+  <tr style="color:black">
+     <td>Shalikha</td>
+    <td>228.34</td>
+    <td>7</td>
+	<td>100</td>
+    <td>118</td>
+    <td>147663</td>
+	<td>646</td>
+    <td>44.0</td>
+  </tr>
+   <tr style="color:black">
+    <td>Sreepur</td>
+    <td>179.18</td>
+    <td>8</td>
+	<td>83</td>
+    <td>163</td>
+    <td>156401</td>
+	<td>873</td>
+    <td>43.5</td>
+  </tr>
+  
+   
+</table>
+</center>
+<br>
+<br>
+<br>
+Developer information:<br>
+Name:SULAVE KUMAR BISWAS<br>
+Occ:Student of B-Tech CSE
+
+
+<br>
+<p style="color:red">Find him on:</p><br><br>
+      <ul>
+        <li style=color:white><a href="https://www.facebook.com/pranto.biswas.1297">FACEBOOK</a></li>
+        <li style=color:white><a href="https://instagram.com/sulavebiswas?igshid=1e5o0owifzydr">INSTRAGRAM</a></li>
+		<li style=color:white ><a href="https://www.youtube.com/channel/UCp-ivwgVZlWAn-qbWANjtEw">YOUTUBE</a></li>
+      </ul>
+<br>
+<br>
+<br>
+<br>
+<p style="color:red;font-size:20;text-align:right"><a href="sps.html">Next page</a> for more information
+		 </p>
+<br>
+<br>
+</body>
+</html> 
+
